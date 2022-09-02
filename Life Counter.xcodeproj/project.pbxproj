@@ -13,6 +13,7 @@
 		B867AFA928C018A4000F34E1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B867AFA828C018A4000F34E1 /* Preview Assets.xcassets */; };
 		B867AFAB28C018A4000F34E1 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = B867AFAA28C018A4000F34E1 /* Persistence.swift */; };
 		B867AFAE28C018A4000F34E1 /* Life_Counter.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B867AFAC28C018A4000F34E1 /* Life_Counter.xcdatamodeld */; };
+		B8D24B3428C15D3F00BEE126 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D24B3328C15D3F00BEE126 /* PlayerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		B867AFA828C018A4000F34E1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B867AFAA28C018A4000F34E1 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		B867AFAD28C018A4000F34E1 /* Life_Counter.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Life_Counter.xcdatamodel; sourceTree = "<group>"; };
+		B8D24B3328C15D3F00BEE126 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 			children = (
 				B867AFA128C018A3000F34E1 /* Life_CounterApp.swift */,
 				B867AFA328C018A3000F34E1 /* ContentView.swift */,
+				B867AFB428C155C4000F34E1 /* Views */,
 				B867AFA528C018A4000F34E1 /* Assets.xcassets */,
 				B867AFAA28C018A4000F34E1 /* Persistence.swift */,
 				B867AFAC28C018A4000F34E1 /* Life_Counter.xcdatamodeld */,
@@ -71,6 +74,14 @@
 				B867AFA828C018A4000F34E1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B867AFB428C155C4000F34E1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B8D24B3328C15D3F00BEE126 /* PlayerView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,6 +157,7 @@
 				B867AFAE28C018A4000F34E1 /* Life_Counter.xcdatamodeld in Sources */,
 				B867AFAB28C018A4000F34E1 /* Persistence.swift in Sources */,
 				B867AFA428C018A3000F34E1 /* ContentView.swift in Sources */,
+				B8D24B3428C15D3F00BEE126 /* PlayerView.swift in Sources */,
 				B867AFA228C018A3000F34E1 /* Life_CounterApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
