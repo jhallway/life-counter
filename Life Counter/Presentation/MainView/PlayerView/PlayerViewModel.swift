@@ -11,8 +11,8 @@ import SwiftUI
 extension PlayerView {
     @MainActor class ViewModel: ObservableObject {
         @Published var life: Int = 40
-        var position = Position.top
-        @Published var rotation = getRotation
+        @Published var position = Position.top
+        @Published var rotation = Angle(degrees: 0)
         @Published var color = Color.gray
         
         private func getRotation() -> Angle {
@@ -45,4 +45,10 @@ enum Position {
     case left
     case right
     case bottom
+}
+
+struct PlayerViewState {
+    var startingLife: Int
+    var position: Position
+    var color: Color
 }

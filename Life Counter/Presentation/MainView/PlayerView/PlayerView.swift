@@ -68,10 +68,36 @@ struct PlayerView: View {
             }
             Text(String(viewModel.life))
         }
-        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
+        .frame(maxWidth: calculateWidth(), minHeight: calculateMinHeight(), maxHeight: calculateMaxHeight(), alignment: .center)
+        .background(viewModel.color)
         
-        .background(Color.gray)
-        
+    }
+    
+    private func calculateWidth() -> CGFloat{
+        switch viewModel.position {
+        case .top, .bottom:
+            return UIScreen.main.bounds.size.width
+        case .right, .left:
+            return UIScreen.main.bounds.size.width / 2
+        }
+    }
+    
+    private func calculateMinHeight() -> CGFloat{
+        switch viewModel.position {
+        case .top, .bottom:
+            return UIScreen.main.bounds.size.width / 2
+        case .right, .left:
+            return UIScreen.main.bounds.size.width
+        }
+    }
+    
+    private func calculateMaxHeight() -> CGFloat{
+        switch viewModel.position {
+        case .top, .bottom:
+            return UIScreen.main.bounds.size.width / 2
+        case .right, .left:
+            return .infinity
+        }
     }
 }
 

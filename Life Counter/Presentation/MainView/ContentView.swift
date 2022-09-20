@@ -18,12 +18,24 @@ struct ContentView: View {
 
     var body: some View {
         VStack {
-            PlayerView()
+            Spacer()
             HStack {
+                Spacer()
                 PlayerView()
-                PlayerView()
+                Spacer()
             }
-            PlayerView()
+            HStack {
+                Spacer()
+                PlayerView()
+                PlayerView()
+                Spacer()
+            }
+            HStack {
+                Spacer()
+                PlayerView()
+                Spacer()
+            }
+            Spacer()
         }
     }
 }

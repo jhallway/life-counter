@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B84D96E328C17928007E4D09 /* PlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84D96E228C17928007E4D09 /* PlayerViewModel.swift */; };
+		B84D96E828D93A14007E4D09 /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84D96E728D93A14007E4D09 /* ContentViewController.swift */; };
 		B867AFA228C018A3000F34E1 /* Life_CounterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B867AFA128C018A3000F34E1 /* Life_CounterApp.swift */; };
 		B867AFA428C018A3000F34E1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B867AFA328C018A3000F34E1 /* ContentView.swift */; };
 		B867AFA628C018A4000F34E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B867AFA528C018A4000F34E1 /* Assets.xcassets */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B84D96E228C17928007E4D09 /* PlayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewModel.swift; sourceTree = "<group>"; };
+		B84D96E728D93A14007E4D09 /* ContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
 		B867AF9E28C018A3000F34E1 /* Life Counter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Life Counter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B867AFA128C018A3000F34E1 /* Life_CounterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Life_CounterApp.swift; sourceTree = "<group>"; };
 		B867AFA328C018A3000F34E1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -38,6 +42,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B84D96E428C18354007E4D09 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B84D96E528D92E9F007E4D09 /* PlayerView */ = {
+			isa = PBXGroup;
+			children = (
+				B84D96E228C17928007E4D09 /* PlayerViewModel.swift */,
+				B8D24B3328C15D3F00BEE126 /* PlayerView.swift */,
+			);
+			path = PlayerView;
+			sourceTree = "<group>";
+		};
+		B84D96E628D9397F007E4D09 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				B867AFA328C018A3000F34E1 /* ContentView.swift */,
+				B84D96E728D93A14007E4D09 /* ContentViewController.swift */,
+				B84D96E528D92E9F007E4D09 /* PlayerView */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
 		B867AF9528C018A3000F34E1 = {
 			isa = PBXGroup;
 			children = (
@@ -58,8 +88,8 @@
 			isa = PBXGroup;
 			children = (
 				B867AFA128C018A3000F34E1 /* Life_CounterApp.swift */,
-				B867AFA328C018A3000F34E1 /* ContentView.swift */,
-				B867AFB428C155C4000F34E1 /* Views */,
+				B84D96E428C18354007E4D09 /* Models */,
+				B867AFB428C155C4000F34E1 /* Presentation */,
 				B867AFA528C018A4000F34E1 /* Assets.xcassets */,
 				B867AFAA28C018A4000F34E1 /* Persistence.swift */,
 				B867AFAC28C018A4000F34E1 /* Life_Counter.xcdatamodeld */,
@@ -76,12 +106,12 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		B867AFB428C155C4000F34E1 /* Views */ = {
+		B867AFB428C155C4000F34E1 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				B8D24B3328C15D3F00BEE126 /* PlayerView.swift */,
+				B84D96E628D9397F007E4D09 /* MainView */,
 			);
-			path = Views;
+			path = Presentation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,8 +187,10 @@
 				B867AFAE28C018A4000F34E1 /* Life_Counter.xcdatamodeld in Sources */,
 				B867AFAB28C018A4000F34E1 /* Persistence.swift in Sources */,
 				B867AFA428C018A3000F34E1 /* ContentView.swift in Sources */,
+				B84D96E328C17928007E4D09 /* PlayerViewModel.swift in Sources */,
 				B8D24B3428C15D3F00BEE126 /* PlayerView.swift in Sources */,
 				B867AFA228C018A3000F34E1 /* Life_CounterApp.swift in Sources */,
+				B84D96E828D93A14007E4D09 /* ContentViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
